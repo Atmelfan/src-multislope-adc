@@ -1,0 +1,7 @@
+{
+    "recommendations": [
+        "vinrobot.vhdl-formatter",
+        "matklad.rust-analyzer",
+        "johannesbonk.ghdl-interface"
+    ]
+}

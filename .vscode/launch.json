@@ -1,0 +1,101 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in library 'ice40-spi-rs'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--lib",
+                    "--package=ice40-spi-rs"
+                ],
+                "filter": {
+                    "name": "ice40-spi-rs",
+                    "kind": "lib"
+                }
+            },
+            "args": ["target/debug/build/multislope-adc-899c3c31fcd3f852/out/top.bin"],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug example 'linux'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--example=linux",
+                    "--package=ice40-spi-rs"
+                ],
+                "filter": {
+                    "name": "linux",
+                    "kind": "example"
+                }
+            },
+            "args": ["target/debug/build/multislope-adc-899c3c31fcd3f852/out/top.bin"],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in example 'linux'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--example=linux",
+                    "--package=ice40-spi-rs"
+                ],
+                "filter": {
+                    "name": "linux",
+                    "kind": "example"
+                }
+            },
+            "args": ["target/debug/build/multislope-adc-899c3c31fcd3f852/out/top.bin"],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug example 'ftdi'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--example=ftdi",
+                    "--package=ice40-spi-rs"
+                ],
+                "filter": {
+                    "name": "ftdi",
+                    "kind": "example"
+                }
+            },
+            "args": ["target/debug/build/multislope-adc-899c3c31fcd3f852/out/top.bin"],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in example 'ftdi'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--example=ftdi",
+                    "--package=ice40-spi-rs"
+                ],
+                "filter": {
+                    "name": "ftdi",
+                    "kind": "example"
+                }
+            },
+            "args": ["target/debug/build/multislope-adc-899c3c31fcd3f852/out/top.bin"],
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}

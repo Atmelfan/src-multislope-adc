@@ -1,0 +1,38 @@
+# For the iCE40 UltraPlus (iCE40UP5K-QFN) Breakout Board
+
+set_io LED_R 41
+set_io LED_G 40
+set_io LED_B 39
+set_io SW0 23
+set_io SW1 25
+set_io SW2 34
+
+# Reset is SW3
+set_io rst 43
+
+# 12MHz clock
+set_io clk 35
+
+# bank 0
+set_io IOT_39A 26
+set_io IOT_38B 27
+set_io IOT_42B 31
+set_io IOT_43A 32
+set_io IOT_45A_G1 37
+set_io IOT_51A 42
+set_io IOT_50B 38
+
+#spi
+set_io SPI_SS 16
+set_io SPI_SCK 15
+set_io SPI_MOSI 17
+set_io SPI_MISO 14
+
+# HEADER C
+set_io IOB_08A 4
+set_io IOB_23B 21
+set_io IOB_09B 3
+set_io IOB_24A 13
+set_io IOB_04A 48
+set_io IOB_25B 20
+set_io IOB_05B 45

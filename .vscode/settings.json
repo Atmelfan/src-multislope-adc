@@ -1,0 +1,6 @@
+{
+    "vhdl.formatter.case.keyword": "LowerCase",
+    "vhdl.formatter.case.typename": "LowerCase",
+    "ghdl-interface.library.LibraryDirectory": [],
+    "ghdl-interface.vhdl.VHDLStandard": "08"
+}
