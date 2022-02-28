@@ -2,5 +2,17 @@
     "vhdl.formatter.case.keyword": "LowerCase",
     "vhdl.formatter.case.typename": "LowerCase",
     "ghdl-interface.library.LibraryDirectory": [],
-    "ghdl-interface.vhdl.VHDLStandard": "08"
+    "ghdl-interface.vhdl.VHDLStandard": "08",
+    "rust-analyzer.cargo.allFeatures": true,
+    "files.exclude": {
+        "**/__pycache__": true,
+        "**/.pytest_cache": true,
+        "**/*-obj08.cf": true,
+        "**/*-obj93.cf": true,
+        "**/*.o": true,
+        "**/sim_build/": true
+    },
+    "rust-analyzer.cargo.features": [
+        "cosim"
+    ]
 }

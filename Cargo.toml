@@ -7,4 +7,28 @@ edition = "2021"
 
 [dependencies]
 embedded-hal = "0.2"
+byteorder = {version = "1.4.3", default-features = false}
 
+[dev-dependencies]
+libc = "0.2.0"
+libloading = "0.7"
+lazy_static = "1.4.0"
+ice40 = "0.2"
+
+
+[dev-dependencies.ftdi-embedded-hal]
+version = "0.11.0"
+features = ["libftd2xx-static"]
+
+[dev-dependencies.libftd2xx]
+version = "0.32"
+features = ["static"]
+
+
+[features]
+default = ["spi-bridge", "include-bin"]
+# Embedded-hal driver for the 
+spi-bridge = []
+include-bin = []
+
+cosim = []
